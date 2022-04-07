@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app! v5" />
+        <Header title="Welcome to my app! v6" />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
@@ -21,3 +21,4 @@ export default function Home() {
     </div>
   )
 }
+  //<iframe src=".netlify/functions/hello" height="200" width="300" title="Iframe Example"></iframe>
