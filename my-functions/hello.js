@@ -10,10 +10,11 @@ exports.handler = async function (event, context) {
   return {
     statusCode: 200,
     body: JSON.stringify({
-      vmwStock: vmw, message: `Hello World from example v3. \n
-        path=${event.path}, headers=${event.headers}\n
-        clientcontext=${context.clientContex}
-        ` }),
+      VMWareStock: vmw,
+      message: "Hello World from example v4.",
+      path: event.path,
+      headers: event.headers
+      }),
   };
 }
 
