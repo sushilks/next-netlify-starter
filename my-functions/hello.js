@@ -1,9 +1,10 @@
-const SI = require('nodejs-stock-info')
+const sharePrice = require("share-price");
 exports.handler = async function (event, context) {
-  let stockInfo = new SI("vmw");
-  const vmw = await new Promise(resolve => {
-    stockInfo.getStockInfo().then((response) => {
-      resolve(response);
+  const vmw = await new Promise((resolve, reject) => {
+    sharePrice.getSharePrice({ stockSymbol: "VMW" }).then(function(stockPrice) {
+      resolve(stockPrice);
+    }).catch((error) => {
+      reject(error);
     });
   });
   return {
@@ -15,3 +16,4 @@ exports.handler = async function (event, context) {
         ` }),
   };
 }
+
