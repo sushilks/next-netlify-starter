@@ -11,14 +11,15 @@ export default function Home() {
       </Head>
 
       <main>
-        <Header title="Welcome to my app! v6" />
+        <Header title="Welcome to my app! v7" />
         <p className="description">
           Get started by editing <code>pages/index.js</code>
         </p>
-        <iframe src=".netlify/functions/hello" height="200" width="300" title="Iframe Example"></iframe>
+
     </main>
 
       <Footer />
     </div>
   )
 }
+//        <iframe src=".netlify/functions/hello" height="200" width="300" title="Iframe Example"></iframe>
